@@ -12,7 +12,8 @@ import {DigitransitService} from './services/digitransit.service';
 import {FormsModule} from '@angular/forms';
 
 import {AgmCoreModule} from '@agm/core';
-import { RouteDirectionPipe } from './pipes/route-direction.pipe';
+import {RouteDirectionPipe} from './pipes/route-direction.pipe';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,8 @@ import { RouteDirectionPipe } from './pipes/route-direction.pipe';
     RouteDirectionPipe,
   ],
   imports: [
+    MatButtonModule,
+    MatCheckboxModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
